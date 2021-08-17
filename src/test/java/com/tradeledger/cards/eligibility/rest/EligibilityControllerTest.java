@@ -1,4 +1,4 @@
-wpackage com.tradeledger.cards.eligibility.rest;
+package com.tradeledger.cards.eligibility.rest;
 
 import static org.hamcrest.Matchers.hasSize;
 import static org.mockito.Mockito.when;
