@@ -38,3 +38,6 @@ After execution, test reports are stored as `html` file in `PostDeploymentTests/
 
 ### Sample Test report
 
+<img width="1919" alt="Screenshot 2021-08-17 at 09 43 14" src="https://user-images.githubusercontent.com/13304448/129693959-cac959b7-3c12-4175-b67b-9afaa993911e.png">
+
+
