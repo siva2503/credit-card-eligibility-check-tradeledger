@@ -50,3 +50,8 @@ note: for reference a sample test report is submitted with this repo.
 2. Execute tests inside container against the docker hosted service
 3. Implement CD for auto triggering API tests post deployment completion.
 4. Implement contract testing
+5. Improve API security by introducting token-based auth or CORS or other forms of securely querying the server and adapt test framework to the changes.
+
+## Items not considered for automation test design
+
+Assuming Solution Design is a seperate section of the interview process I did not consider the last section "Considerations (only for Solution Design section)". The points that I have added under "Additional implementations" should be considered for solution design.
