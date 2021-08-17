@@ -10,6 +10,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 import actions.ReusableActions;
+import io.restassured.response.Response;
 
 public class EligibilityCheckSteps {
 
