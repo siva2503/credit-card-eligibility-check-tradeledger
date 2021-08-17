@@ -24,13 +24,15 @@ Run backend locally:
 
 Once backend is running, you can view the Swagger specification here:
 
- `http://localhost:8080/swagger-ui.html`
+`http://localhost:8080/swagger-ui.html`
 
 ## How to Run the tests
 
-Open a new terminal/cmd prompt without killing the app and execute, 
+Open a new terminal/cmd prompt without killing the app and execute,
 
 `./gradlew regressionTests` - executs all cucumber tests written inside `PostDeploymentTests/src/resources/features/` directory
+
+note: `PostDeploymentTests/build.gradle` has a task called `regressionTests` which is the entry point to all API automation tests.
 
 ## Test Reports
 
@@ -40,4 +42,11 @@ After execution, test reports are stored as `html` file in `PostDeploymentTests/
 
 <img width="1919" alt="Screenshot 2021-08-17 at 09 43 14" src="https://user-images.githubusercontent.com/13304448/129693959-cac959b7-3c12-4175-b67b-9afaa993911e.png">
 
+note: for reference a sample test report is submitted with this repo.
 
+## Additional implementations possible for the framework to be ready for wider use
+
+1. Create an image and run the springboot app inside docker container
+2. Execute tests inside container against the docker hosted service
+3. Implement CD for auto triggering API tests post deployment completion.
+4. Implement contract testing

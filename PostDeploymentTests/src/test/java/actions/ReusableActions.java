@@ -58,6 +58,12 @@ public class ReusableActions {
     return cardsList;
   }
 
+  public String get_default_error_message(Response response) {
+    String jsonString = response.asString();
+    String message = JsonPath.from(jsonString).get("errors[0].defaultMessage");
+    return message;
+  }
+
   public int get_keys_size_from_json_obj(JsonObject jsonObj) {
     List<String> keys = new ArrayList<String>();
     for (Entry<String, JsonElement> e : jsonObj.entrySet()) {

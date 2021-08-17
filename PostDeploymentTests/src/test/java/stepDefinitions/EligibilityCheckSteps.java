@@ -56,6 +56,8 @@ public class EligibilityCheckSteps {
 	@Then("^I should get a status code indicating \"([^\"]*)\"$") 
 	public void i_should_get_a_status_code_indicating_success(String expectedStatus) {
 		if (expectedStatus.contains("failure")) {
+			String errorMessage = actions.get_default_error_message(response);
+			Assert.assertEquals("must not be null", errorMessage);
 			Assert.assertEquals(400, response.getStatusCode());
 		} else {
 			Assert.assertEquals(200, response.getStatusCode());
